@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="SessionFactory">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/restopedia</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password"></property>
+  <property name="hibernate.default_schema">restopedia</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="show_sql">true</property>
+  <mapping class="model.com.master.Supplier"/>
+  <mapping class="model.com.master.Department"/>
+  <mapping class="model.com.master.Item"/>
+  <mapping class="model.com.master.Customer"/>
+  <mapping class="model.com.inventory.StockEntry"/>
+  <mapping class="model.com.master.SalesEntry"/>
+  <mapping class="model.com.master.SalesReturn"/>
+  <mapping class="model.com.inventory.Wastage"/>
+  <mapping class="model.com.master.Recipe"/>
+  <mapping class="model.com.master.Restaurant"/>
+  <mapping class="com.restopedia.Tablecontent"/>
+  <mapping class="com.restopedia.TableDesc"/>
+  <mapping class="com.restopedia.KotBillGen"/>
+  <mapping class="com.restopedia.Employee"/>
+  <mapping class="com.restopedia.MenuCategory"/>
+  <mapping class="com.restopedia.MenuItem"/>
+  <mapping class="com.restopedia.KotOrders"/>
+  <mapping class="com.restopedia.Delivery_order"></mapping>
+  <mapping class="model.com.master.Purchase"/>
+  <mapping class="model.com.restaurent.Restaurantchainfile"/>
+  <mapping class="model.com.restaurent.Restaurantuserfile"/>
+  <mapping class="model.com.restaurent.Restaurantwaiter"/>
+  <mapping class="model.com.restaurent.Restaurantcguest"/>
+  
+ </session-factory>
+</hibernate-configuration>
